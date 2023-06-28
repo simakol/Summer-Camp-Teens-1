@@ -1,0 +1,53 @@
+p {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+img {
+  width: 500px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: lime;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.red-square {
+  background-color: red;
+}
+
+.violet-square {
+  background-color: violet;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  margin-left: 30px;
+  /* margin - зовнішній відступ (за межами border) між двома окремими елементами  */
+}
+
+.text {
+  background-color: green;
+  color: white;
+  border: 2px solid black;
+  padding-top: 20px;
+  /* padding - внутрішній відступ (всередині border) всередині одного елементу, збільшує розміри елементу */
+  padding-left: 10px;
+  padding-bottom: 70px;
+}
+
+.btn {
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  background-color: lime;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
