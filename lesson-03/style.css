@@ -1,0 +1,103 @@
+/* 
+? display: block; (блочний елемент)
+ - займає всю ширину, яка йому доступна, через це інші елементи не можуть стати поряд
+ - можна задавати розміри (width, height)
+ - можна задавати відступи (margin, padding)
+
+? display: inline; (строчний елемент)
+ - займає стільки місця, скільки потрібно, щоб показати текст, завдяки цьому інші строчні елементи можуть стати поряд
+ - не можна задавати розміри (width, height працювати не будуть)
+ - не можна задавати відступи (margin, padding коректно працювати не буде)
+
+? display: inline-block; (строчно-блочний елемент)
+ - займає стільки місця, скільки потрібно, щоб показати текст, завдяки цьому інші строчні елементи можуть стати поряд
+ - можна задавати розміри (width, height)
+ - можна задавати відступи (margin, padding)
+
+? display: none; 
+ - елемент вирізається з потоку документу, тобто в коді він є, а на сторінці його не буде і інші елементи не будуть його бачити
+
+*/
+
+/* .square {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  background-color: lime;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 50px;
+} */
+
+.container {
+  background-color: grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  color: azure;
+}
+
+/* Селектор нащадків (пробіл) - вибере всі теги <p> всередині елементу з класом container */
+/* .container p {
+  font-size: 30px;
+  background-color: rgb(97, 97, 49);
+} */
+
+/* Селектор дочірній (>) - він вибере все теги <p> які є дочірніми(прямими нащадками) для елементу з класом container */
+/* .container > p {
+  font-size: 30px;
+  background-color: rgb(97, 97, 49);
+} */
+
+/* Сусідній родинний селектор (+) - він вибере перший елемент <p>, який знаходиться безпосередньо після елементу з класом container */
+/* .container + p {
+    font-size: 30px;
+    background-color: rgb(97, 97, 49);
+  } */
+
+.btn {
+  display: inline-block;
+  font-size: 30px;
+  background-color: black;
+  border: 2px solid lime;
+  color: lime;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+/* transition - керує швидкістю протікання анімації (зміни стилів в станах) */
+
+/* псевдо-клас дозволяє писати стилі до станів елементів */
+
+/* :hover - дає стилі до стану наведення */
+
+.btn:hover {
+  background-color: lime;
+  color: black;
+  border-color: black;
+}
