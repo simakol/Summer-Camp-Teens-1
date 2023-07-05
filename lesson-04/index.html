@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tables and lists</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>список покупок</h2>
+    <ol>
+      <li>Хліб</li>
+      <li>Молоко</li>
+      <li>Сир</li>
+    </ol>
+
+    <h2>список покупок</h2>
+    <ul>
+      <li>Хліб</li>
+      <li>Молоко</li>
+      <li>Сир</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Назва</th>
+          <th>Ціна</th>
+          <th>Кількість</th>
+          <th>Вартість</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Сир</td>
+          <td>100 грн</td>
+          <td>3 кг</td>
+          <td>300 грн</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Хліб</td>
+          <td>25 грн</td>
+          <td>3 шт</td>
+          <td>75 грн</td>
+        </tr>
+        <tr>
+          <td>50 грн</td>
+          <td>2 шт</td>
+          <td>100 грн</td>
+        </tr>
+        <tr>
+          <td>Молоко</td>
+          <td>60 грн</td>
+          <td>1 л</td>
+          <td>60 грн</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Фінальна вартість</td>
+          <td>535 грн</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
