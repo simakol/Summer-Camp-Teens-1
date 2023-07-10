@@ -1,0 +1,146 @@
+/* .square {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.blue {
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
+.parent {
+  border: 5px solid lime;
+  border-radius: 15px;
+  height: 500px;
+  width: 50%;
+  position: relative;
+} */
+
+/* 
+* position: relateive;
+- нормальний потік документу (всі елементи бачать наш елемент, навіть якщо ми його зсунемо)
+- позиціонується відносно самого себе (відносно місця, де він стояв)
+
+
+* position: absolute;
+- видаляється з потоку документу (інші елементи перестають його бачити і думають, що його не існує в документі)
+- перекриває всі елементи
+- позиціонується відносно найближчого батьківского елементу у якого стоїть position relative або position absolute. А якщо такого батька немає - вирівнюється відносно всього документу
+
+
+* важливі помітки:
+- top/left має вищу приорітетність, ніж bottom/right
+- z-index - працює тільки з relative, absolute, fixed. За допомогою нього ми можемо вказати порядок накладання елементів одне на одного. Чим вище цифра - тим вище елемент буде накладатися в шарах.
+
+*/
+
+/* body {
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=1xw:0.84415xh;center,top");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-left: 150px;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  height: 500px;
+  width: 300px;
+  background-color: black;
+  margin-left: -160px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.card:hover {
+  opacity: 1;
+  position: relative;
+  bottom: 100px;
+  z-index: 1;
+}
+
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.orange {
+  background-color: orange;
+}
+.purple {
+  background-color: purple;
+}
+.gray {
+  background-color: gray;
+} */
+
+.head {
+  width: 500px;
+  height: 500px;
+  background-color: brown;
+  border-radius: 20%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.eye {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+}
+
+.left-eye {
+  left: 100px;
+}
+
+.right-eye {
+  right: 100px;
+}
+
+.pupil {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+.mouth {
+  width: 300px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  text-align: center;
+}
+
+.teeth {
+  width: 50px;
+  height: 40px;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 0 0 100px 100px;
+}
