@@ -1,0 +1,135 @@
+body {
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  text-decoration: none;
+  position: relative;
+}
+
+.logo-img-hover,
+.logo-img {
+  transition: 0.5s;
+}
+
+.logo-container:hover .logo-text > span {
+  color: #f26522;
+}
+
+.logo-img-hover {
+  /* display: none; */
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.logo-container:hover .logo-img-hover {
+  /* display: inline-block; */
+  opacity: 1;
+}
+
+.logo-container:hover .logo-img {
+  /* display: none; */
+  opacity: 0;
+}
+
+.logo-text {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.logo-text > span {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  display: block;
+  transition: 0.5s;
+}
+
+.logo-text > span:first-child {
+  font-size: 29px;
+  line-height: 29px;
+}
+
+.logo-text > span:last-child {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.contacts > a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  transition: 0.5s;
+}
+
+.contacts > a:hover {
+  color: #f26522;
+}
+
+.contacts > a:first-child {
+  margin-bottom: 13px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+  justify-content: space-between;
+}
+
+.tour-card:hover h2 {
+  color: #f26522;
+}
+
+.tour-card > h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.image-container > img {
+  width: 300px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+}
