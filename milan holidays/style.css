@@ -120,6 +120,57 @@ main {
   width: 300px;
 }
 
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.tour-card:hover .tour-price-container {
+  bottom: 0;
+}
+
+.tour-price-container {
+  background-color: #f26522;
+  padding: 30px 16px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  transition: 0.5s;
+}
+
+.tour-price {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.tour-price::before {
+  content: "from";
+  font-size: 10px;
+  line-height: 10px;
+  position: absolute;
+  top: 10px;
+}
+
+.tour-details {
+  text-decoration: none;
+  color: #fff;
+}
+
+.tour-details::after {
+  content: ">";
+  margin-left: 10px;
+}
+
 footer {
   margin-top: 50px;
 }
