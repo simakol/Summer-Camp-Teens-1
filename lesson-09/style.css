@@ -1,0 +1,33 @@
+/* input {
+  display: block;
+  margin: 15px auto;
+  outline: none;
+  border: 5px solid transparent;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+input:focus {
+  border-color: lime;
+}
+
+form {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #000;
+  padding: 50px 0;
+  border-radius: 15px;
+  border: 2px solid lime;
+  color: lime;
+  font-family: sans-serif;
+}
+
+.login-btn {
+  border: 2px solid lime;
+  color: black;
+  background-color: #fff;
+  padding: 10px 20px;
+} */
+
+
