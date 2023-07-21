@@ -1,0 +1,133 @@
+/* .circle {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  animation: move 2s linear 1s infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    background-color: green;
+    left: 0;
+    top: 0;
+  }
+  50% {
+    background-color: red;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+  }
+  100% {
+    background-color: blue;
+    left: 87%;
+    top: 80%;
+  }
+} */
+
+body {
+  margin: 0;
+}
+
+.game-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(green, white);
+}
+
+.pacman {
+  position: absolute;
+  animation: pacmanMove 10s linear infinite;
+}
+
+.pacman-top-jaw,
+.pacman-bottom-jaw {
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.pacman-top-jaw {
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  transform-origin: bottom center;
+  transform: rotate(-35deg);
+  animation: spintop 500ms linear infinite alternate;
+}
+.pacman-bottom-jaw {
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  transform-origin: top center;
+  transform: rotate(35deg);
+  animation: spinbottom 500ms linear infinite alternate;
+}
+
+.pacman-top-jaw::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 130px;
+}
+
+@keyframes spintop {
+  from {
+    transform: rotate(-35deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes spinbottom {
+  from {
+    transform: rotate(35deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes pacmanMove {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  25% {
+    top: 0;
+    left: 87vw;
+    transform: rotate(0);
+  }
+  26% {
+    transform: rotate(90deg);
+  }
+  50% {
+    top: 50vh;
+    left: 87vw;
+    transform: rotate(90deg);
+  }
+  51% {
+    transform: rotate(180deg);
+  }
+  75% {
+    top: 50vh;
+    left: 0;
+    transform: rotate(180deg);
+  }
+  76% {
+    transform: rotate(270deg);
+  }
+  99% {
+    top: 0;
+    left: 0;
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
