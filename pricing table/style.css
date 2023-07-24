@@ -1,0 +1,158 @@
+body {
+  background: #3a4965;
+}
+
+.main-table {
+  margin: 50px auto;
+}
+
+.titles th {
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.titles th:not(:first-child) {
+  color: #fff;
+}
+
+.titles th:first-child {
+  color: #484848;
+  font-size: 30px;
+}
+
+.titles th:first-child::before {
+  content: "Choose your";
+  font-size: 18px;
+  display: block;
+  text-align: center;
+}
+
+.main-table th,
+.main-table td {
+  background-color: #fafafa;
+  padding: 25px 60px;
+}
+
+.main-table .green {
+  background-color: #89c331;
+}
+.main-table .red {
+  background-color: #f04a56;
+}
+.main-table .blue {
+  background-color: #20807c;
+}
+
+.prices th {
+  color: #484848;
+  font-family: "Arimo", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  border-left: 1px solid #dcdcdc;
+}
+.prices th::before {
+  content: "$";
+}
+
+.prices th::after {
+  content: "Per Month";
+  color: #484848;
+  font-family: "Arimo", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-left: -30px;
+}
+
+.prices th sup {
+  font-size: 24px;
+  vertical-align: text-top;
+}
+
+tr td:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+tr td {
+  color: #484848;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+tr td:not(:last-child) {
+  border-right: 1px solid #dcdcdc;
+}
+
+tbody tr:nth-child(odd) > td {
+  background-color: #f2f2f2;
+}
+tbody tr:nth-child(even) > td {
+  background-color: #e3e3e3;
+}
+
+.btn {
+  position: relative;
+}
+
+.btn::after {
+  content: "";
+  height: 9px;
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.btn.black::after {
+  background-color: #404040;
+}
+.btn.red::after {
+  background-color: #df3a46;
+}
+.btn.green::after {
+  background-color: #79b027;
+}
+.btn.blue::after {
+  background-color: #16736f;
+}
+
+.black {
+  background-color: #484848;
+}
+
+.btn {
+  color: #fff;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 17px 55px;
+  text-decoration: none;
+  border-radius: 5px;
+}
