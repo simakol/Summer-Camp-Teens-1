@@ -13,7 +13,8 @@
   position: relative;
 }
 
-.hero::before {
+.hero::before,
+.testimonials-section::before {
   content: "";
   position: absolute;
   left: 0;
@@ -23,7 +24,8 @@
   border-bottom: 100px solid white;
   border-right: 50vw solid transparent;
 }
-.hero::after {
+.hero::after,
+.testimonials-section::after {
   content: "";
   position: absolute;
   right: 0;
@@ -131,7 +133,8 @@ h1 {
   margin-top: 30px;
 }
 
-.company-section {
+.company-section,
+.testimonials-section {
   padding-top: 120px;
   background-image: url("./images/companies-bg.png");
   background-repeat: no-repeat;
@@ -143,7 +146,8 @@ h1 {
   text-align: center;
 }
 
-.company-section::after {
+.company-section::after,
+.testimonials-triangle {
   content: "";
   position: absolute;
   left: 0;
@@ -194,6 +198,61 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+}
+
+.testimonials-section .container {
+  margin-top: 100px;
+}
+.testimonials-section .section-subtitle {
+  color: #fff;
+}
+
+.quote-container {
+  width: 70%;
+  margin: 50px auto 0;
+}
+
+.quote-container p {
+  color: #d3cccc;
+  text-align: center;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+}
+
+.quote-container span {
+  color: #fff;
+  font-family: "OpenSans", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.45px;
+  margin-top: 30px;
+  display: block;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.why-section {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.why-formula {
+  color: #424f57;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.75px;
+  width: 70%;
+  margin: 50px auto 0;
 }
 
 footer {
