@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -12,24 +18,18 @@
   position: relative;
 }
 
-.hero-bg::after {
-  content: "";
+.overlay-shadow {
   background: radial-gradient(
     189.96% 61.18% at 50% 38.82%,
     rgba(255, 181, 72, 0) 0%,
     rgba(52, 44, 29, 0.8) 73.22%,
     #08090a 99.74%
   );
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  height: 100vh;
+  position: relative;
 }
 
 header {
-  position: relative;
-  z-index: 1;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -48,14 +48,12 @@ header {
   text-decoration: none;
   transition: 0.5s;
   position: relative;
-  /* padding-bottom: 3px; */
-  /* border-bottom: 1px solid #ffb548; */
 }
 
 .navbar-menu > a::after {
   content: "";
   height: 1px;
-  width: 100%;
+  width: 0;
   background-color: #ffb548;
   position: absolute;
   bottom: -3px;
@@ -71,6 +69,158 @@ header {
   color: #ffb548;
 }
 
+.navbar-menu > a:hover::after {
+  width: 100%;
+}
+
 .header-links > a:first-child {
   margin-right: 15px;
+}
+
+.hero-section {
+  text-align: center;
+  padding-top: 15%;
+}
+
+.main-title {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.main-subtitle {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.main-btn {
+  color: #1a1917;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px 55px;
+  border-radius: 4px;
+  background: linear-gradient(181deg, #ffb548 0%, #f3af34 99.52%);
+  text-decoration: none;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.hero-link {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.subscribe-section {
+  height: 85vh;
+  background-image: url("./images/subscribe-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 15vh;
+}
+
+.subscribe-section > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe-content {
+  width: 55%;
+}
+
+.section-title {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.section-title::before {
+  font-size: 24px;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.subscribe-content > .section-title::before {
+  content: "Want to stay in touch?";
+}
+
+.subscribe-text {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 45px;
+}
+
+.subscribe-form {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-submit {
+  border: none;
+  padding: 20px 70px;
+  cursor: pointer;
+  margin-top: 0;
+}
+
+.form-email {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  width: 55%;
+  color: #ffb548;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px;
+}
+
+.form-email::placeholder {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
 }

@@ -9,23 +9,58 @@
   </head>
   <body>
     <div class="hero-bg">
-      <header class="container">
-        <a href="#">
-          <img src="./images/logo.svg" alt="sos" />
-        </a>
-        <nav class="navbar-menu">
-          <a href="#">MAIN</a>
-          <a href="#">about</a>
-          <a href="#">game features</a>
-          <a href="#">System requirements</a>
-          <a href="#">quotes</a>
-        </nav>
-        <div class="header-links">
-          <a href="#"><img src="images/xbox.svg" alt="xbox" /></a>
-          <a href="#"><img src="images/steam.svg" alt="steam" /></a>
-        </div>
-      </header>
-      <section class="container hero-section"></section>
+      <div class="overlay-shadow">
+        <header class="container">
+          <a href="#">
+            <img src="./images/logo.svg" alt="sos" />
+          </a>
+          <nav class="navbar-menu">
+            <a href="#">MAIN</a>
+            <a href="#">about</a>
+            <a href="#">game features</a>
+            <a href="#">System requirements</a>
+            <a href="#">quotes</a>
+          </nav>
+          <div class="header-links">
+            <a href="#"><img src="images/xbox.svg" alt="xbox" /></a>
+            <a href="#"><img src="images/steam.svg" alt="steam" /></a>
+          </div>
+        </header>
+        <section class="container hero-section">
+          <h1 class="main-title">SURVIVE AT ALL COSTS</h1>
+          <h2 class="main-subtitle">
+            Experience new social battle royale game
+          </h2>
+          <a href="#" class="main-btn">Buy Now on Steam</a>
+          <a href="#subscribe" class="hero-link">
+            The story
+            <img src="images/arrow.svg" alt="arrow down" />
+          </a>
+        </section>
+      </div>
     </div>
+
+    <section class="subscribe-section" id="subscribe">
+      <div class="container">
+        <img src="images/skull.png" alt="skull" />
+        <div class="subscribe-content">
+          <h2 class="section-title">newsletter SUBSCRIBE</h2>
+          <p class="subscribe-text">
+            In order to start receiving our news, all you have to do is enter
+            your email address. Everything else will be taken care of by us. We
+            will send you emails containing information about game. We don’t
+            spam.
+          </p>
+          <form class="subscribe-form">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="form-email"
+            />
+            <input type="submit" value="Subscribe now" class="main-btn form-submit" />
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
