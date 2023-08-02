@@ -224,3 +224,199 @@ header {
   line-height: normal;
   opacity: 0.5;
 }
+
+.requirements-section {
+  height: 85vh;
+  background-image: url("./images/requirements-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 15vh;
+  text-align: center;
+}
+
+.requirements-section .section-title::before {
+  content: "Can My Computer Run this game?";
+}
+
+.requirements-table {
+  margin-top: 140px;
+}
+
+table,
+tr,
+td {
+  border: 1px solid gray;
+}
+
+.requirements-table td {
+  text-align: left;
+  width: 260px;
+  padding: 15px;
+}
+
+.requirements-table td > h4 {
+  color: #ffb548;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.requirements-table td > p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 8px;
+}
+
+.quotes-section {
+  height: 85vh;
+  background-image: url("./images/quotes-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 15vh;
+  text-align: center;
+}
+
+.quotes-section > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quotes-section .section-title::before {
+  content: "What people think?";
+}
+
+.quotes-left {
+  text-align: left;
+  width: 40%;
+}
+
+.quotes-right {
+  width: 60%;
+  text-align: right;
+}
+
+.quotes-text {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 50px 0;
+}
+
+.quote-card {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px 70px 25px 15px;
+  position: relative;
+  text-align: left;
+  width: 55%;
+  display: inline-block;
+}
+
+.quote-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.quote-card:nth-child(2) {
+  transform: translateX(-100px);
+}
+
+.twitter {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.quote-card-top {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.quote-card-person {
+  display: flex;
+}
+
+.quote-card-img {
+  margin-right: 30px;
+  position: relative;
+}
+
+.quote-card-img > img {
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  width: 63px;
+  height: 63px;
+}
+
+.quote-card-img::before {
+  content: "";
+  background-color: #ffb548;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -3px;
+  right: -10px;
+  z-index: 0;
+}
+
+.quote-card-name {
+  text-align: left;
+}
+
+.quote-card-name > h5 {
+  color: #ffb548;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.quote-card-name > span {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.quote-card-bottom {
+  text-align: left;
+  width: 90%;
+  display: inline-block;
+}
+
+.quote-card-text {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.quote-card-date {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 8px;
+}
