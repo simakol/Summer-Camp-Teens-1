@@ -420,3 +420,97 @@ td {
   line-height: normal;
   margin-top: 8px;
 }
+
+.gallery-section {
+  height: 85vh;
+  background-image: url("./images/gallery-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 15vh;
+  text-align: center;
+}
+
+.gallery-section > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery-section .section-title::before {
+  content: "What is SOS?";
+  text-align: left;
+}
+
+.gallery-section .section-title {
+  text-align: left;
+  width: 70%;
+  position: relative;
+}
+
+.gallery-section .section-title::after {
+  content: "";
+  height: 3px;
+  width: 170%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.gallery-left {
+  width: 50%;
+}
+
+.gallery-text {
+  color: #fff;
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 60px;
+  margin-left: 300px;
+  width: 50%;
+}
+
+.gallery-text > b {
+  font-weight: 700;
+}
+
+.gallery-text > .selected {
+  border-bottom: 1px solid #ffb548;
+}
+
+.gallery-right {
+  width: 50%;
+  height: 612px;
+  position: relative;
+}
+
+.gallery-right > img {
+  width: 503px;
+  height: 612px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gallery-right > img:nth-child(1) {
+  z-index: 2;
+}
+
+.gallery-right > img:nth-child(2) {
+  left: 50px;
+  transform: scale(0.9);
+  z-index: 1;
+}
+
+.gallery-right > img:nth-child(3) {
+  left: 100px;
+  transform: scale(0.8);
+  z-index: 0;
+}
