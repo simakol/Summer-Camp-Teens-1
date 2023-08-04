@@ -421,12 +421,15 @@ td {
   margin-top: 8px;
 }
 
-.gallery-section {
-  height: 85vh;
+.last-bg {
   background-image: url("./images/gallery-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.gallery-section {
+  height: 85vh;
   padding-top: 15vh;
   text-align: center;
 }
@@ -513,4 +516,52 @@ td {
   left: 100px;
   transform: scale(0.8);
   z-index: 0;
+}
+
+footer {
+  padding: 50px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 30px;
+}
+
+.footer-logo > img {
+  width: 90px;
+  height: 90px;
+}
+
+.footer-menu > a {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-menu > a:not(:last-child) {
+  margin-right: 35px;
+}
+
+.footer-bottom,
+.footer-bottom > a {
+  color: #fff;
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 24px;
 }
